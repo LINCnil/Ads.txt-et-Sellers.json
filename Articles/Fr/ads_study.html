@@ -1,0 +1,265 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Style-Type" content="text/css" />
+    <link rel="stylesheet" type="text/css" href="static/base1.css">
+    <script src="static/d3.v4.min.js"></script>
+    <title>Visualiser le web publicitaire avec les fichiers Ads.txt </title>
+    <meta charset="utf-8"><!-- html5 version of http-equiv="Content-Type"... -->
+    <meta name="description" content="Le fichier Ads.txt, un élément de lutte
+    contre la fraude publicitaire sur le web, contient les clefs pour visualiser
+    les relations entre les différents acteurs du milieu.">
+    <meta name="keywords" content="Ads.txt, LINC, CNIL, publicité, traceurs">
+    <link rel="author" href="https://linc.cnil.fr/" />
+<head>
+
+<body>
+    <div class="header">
+        <div class="header_container">
+            <a class="header_link" href="https://linc.cnil.fr/visualiser-le-web-publicitaire-avec-les-fichiers-adstxt-et-sellersjson">
+                <img class="header_back_button" typeof="foaf:Image" src="static/back.svg" alt="Go Back">
+            </a>
+            <a class="header_link"  href="https://linc.cnil.fr">
+                <img typeof="foaf:Image" style="object-fit:contain;" src="https://linc.cnil.fr/sites/default/files/styles/default/public/thumbnails/image/linc_lab_blanc-site-web-2.png?itok=fgENwmXw" >
+            </a>
+        </div>
+    </div>
+
+    <div class="line"> <div class="bloc B2 M4 S9"> <h1> Visualiser le web
+    publicitaire avec les fichiers <span> Ads.txt </span><h1> </div> <div
+    class="bloc B1 M1 S1"> </div> </div>
+
+    <div class="line"> <div class="bloc B3 M3 S9"> <h2><span>Le fichier
+    Ads.txt</span>, un élément de lutte contre la fraude publicitaire sur le
+    web, contient les clefs pour visualiser les relations entre les différents
+    acteurs du milieu.</h2> </div> </div>
+
+    <div class="line"> <div class="bloc B3 M3 S9">Ce contenu édité par le
+    Laboratoire d’innovation Numérique de la CNIL repose sur une analyse factuelle
+    basée sur des informations librement accessibles. Le résultat de cette analyse
+    ne constitue pas une analyse de la conformité des pratiques observées et ne
+    préjuge aucunement de la qualification qui pourrait être faite par la CNIL de
+    ces pratiques. La présente étude a été réalisée dans le cadre de la mission
+    générale de la CNIL de veille sur les technologies de l’information (Art 8-4 de
+    la Loi Informatique et Libertés). <br><br></div>
+    <div class="line">
+    <div class="bloc B2 M9 S9"> <h2>Que sont les fichiers Ads.txt ?</h2> </div>
+    <div class="bloc B3 M3 S9"> Tout commence avec « l’inventaire ». La plupart
+    des sites web que vous visitez réservent sur leurs pages une ou plusieurs zones
+    pour l’affichage de publicité. Pour chaque internaute qui visite ces
+    pages, il y a donc une « impression » (c'est à dire un affichage) possible d'une
+    publicité dans cet espace pour cet internaute. Cette impression constitue un élément d’inventaire
+    commercialisé par l’éditeur du site. <br><br> Par exemple pour un site
+    avec 1 emplacement publicitaire et 1000 visiteurs journaliers, l'inventaire
+    du site est constitué de 1000 impressions publicitaires à vendre par jour.
+    <br><br> L’éditeur va donc généralement utiliser les services d'un ou plusieurs SSP (pour
+    <i>« <a target= "blank"
+    href="https://linc.cnil.fr/les-encheres-en-temps-reel-rtb-un-systeme-complexe">
+    supply-side platform</a> »</i>) pour commercialiser ces impressions sur un
+    réseau d'échange publicitaire (ou <i>« ad exchange »</i>). Chacun de ces SSP est
+    donc autorisé par l’éditeur à vendre de l’inventaire de son site sur un
+    certain nombre de réseaux d’échange publicitaire, que ce SSP soit directement intégré
+    sur la page de l’éditeur ou bien externe et donc simple revendeur. <br><br>
+    <span>Ce sont ces relations qui sont décrites dans le fichier Ads.txt, dans
+    le but de lutter contre la fraude publicitaire.<span> </div> </div>
+
+    <div class="line"> <div class="bloc B2 M9 S9"> <h2> Quels types de fraude
+    les éditeurs cherchent-t-ils à éviter ?</h2>
+
+        </div> <div class="bloc B3 M3 S9">
+
+            Pour quelle raison les éditeurs de site rendent-ils volontairement
+            accessible à tous la liste des sociétés publicitaires avec qui ils
+            travaillent ?
+
+            Le but est d’éviter deux types de fraudes : <ul> <li> La première est
+            assez simple : c’est l’usurpation de l’identité d’un site.
+            Imaginons que le SSP1 vende l’inventaire du site A
+            sur un réseau d’échange publicitaire. Ce site est  de bonne
+            réputation, et l’inventaire se vend bien. Le SSP2 décide alors de
+            vendre sur le même réseau d’échange publicitaire de l’inventaire
+            pour un site B qui est lui moins valorisé en le faisant passer pour
+            le site A. Le SSP2 peut alors vendre son inventaire de moins bonne
+            qualité au prix fort ce qui a pour résultat de faire baisser la côte de l’inventaire
+            authentique (puisque les prix sont ajustés en fonction de l’offre et
+            de la demande. Ads.txt permet à tous les acteurs de l’écosystème de se rendre compte que le SSP2 n’a
+            pas l’autorisation de distribuer l’inventaire du site A et donc de
+            préserver la valeur de celui-ci. </li> <li>La seconde est plus subtile
+            : c’est la revente d’inventaire. Imaginons que l’inventaire du site A soit vendu sur deux
+            réseaux d’échange publicitaire différents, l’ADX1 et l’ADX2. Sur
+            l’ADX1 cet inventaire est vendu 1€ par impression. Sur l’ADX2 où il y a
+            moins de demande, il est vendu 0,50€ par impression. Un SSP peut se
+            rendre compte de cette variation et racheter de l’inventaire sur
+            l’ADX2 à bas prix pour le revendre sur l’ADX1 au prix fort. Bien que
+            cette pratique soit moins frauduleuse, elle peut faire baisser la
+            rentabilité moyenne de l’inventaire, d’où son interdiction. Avec les
+            fichiers Ads.txt il est possible de savoir que le SSP ne devrait pas
+            pouvoir revendre cet inventaire.  </li>
+
+        </div> </div> <div class="line"> <div class="bloc B2 M9 S9"> <h2>
+        Pourquoi ça nous intéresse ?</h2>
+
+        </div> <div class="bloc B3 M3 S9">
+
+            Les fichiers Ads.txt permettent d’identifier les relations entre
+            les sociétés de la publicité en ligne et les éditeurs de sites web.
+            Il faut savoir que les acteurs de cette chaine ne se bornent pas à
+            organiser les ventes d’inventaires. A chaque élément d’inventaire
+            vendu est associé à un identifiant unique de l'internaute qui est généralement stocké dans un cookie. Cet
+            identifiant permet de construire des profils publicitaires des internautes,
+            par exemple en traçant la navigation de ceux-ci à travers le web.
+            Pour mieux comprendre ces pratiques, <a target= "blank"
+            href="https://linc.cnil.fr/les-encheres-en-temps-reel-rtb-un-systeme-complexe">lire
+            l'article sur le RTB</a>, une des modalités de vente programmatique
+            les plus populaires. <br><br> <span>En visualisant la prévalence de
+            chaque acteur sur le web Français, on peut donc se faire une bonne
+            idée de l’étendue de l’usage publicitaire des données de navigation de
+            leurs internautes, chaque service publicitaire utilisant généralement
+            des cookies pour suivre les internautes.</span> </div> </div>
+
+    <div class="line"> <div class="bloc B2 M9 S9"> <h2> Méthodologie</h2>
+
+        </div> <div class="bloc B3 M3 S9">
+
+            Nous utilisons <a target= "blank"
+            href="https://www.alexa.com/topsites/countries/FR">
+            le top 5000 Alexa</a> Français pour identifier les sites
+            les plus visités par les internautes français. <br><br> <script
+            src="static/randomadstxt.js"></script> Sur ces 5000 sites, <span>
+            31,8%</span> possèdent un registre Ads.txt (<a target="blank"
+            href="#" onclick="openAdstxt();" >en voir un au hasard</a>).<br><br>
+            Nous nous baserons sur cet échantillon, le relevé des valeurs étant
+            effectué le 26 Août 2020.<br><br><span> Attention: ces données sont basées
+            sur les valeurs déclarées par les différents acteurs étudiés, qui
+            ne sont pas vérifiées. Les résultats de cette étude sont donc
+            dépendants de l’exactitude de ces données déclarées.</span> </div> </div>
+
+    <div class="line"> <div class="bloc B2 M3 S9">
+
+            <h1>Les résultats</h1> </div> </div> <div class="line"
+            style="align-items:flex-start;"><br></div>
+
+    <div class="line" style="align-items:flex-start;"> <div class="bloc B2 M9
+    S9" > <h2>Les sites visités par les utilisateurs français utilisent un nombre important
+    de systèmes publicitaires différents</h2> Voici la liste pour le top 25 des
+    sites possédant un fichier Ads.txt, classé par popularité : <span>Vous pouvez
+    les classer par valeurs : <label><input type="checkbox"> </label></span>
+    <br><br> Un site moyen déclare utiliser les services de <span>38</span> sociétés
+    différentes. <br><br> Le maximum est <span>188</span> et le minimum
+    <span>1</span>. </div> <div class="bloc B2 M3 S9"> <div id="sortable_graph">
+    </div> <script src="static/sortable_chart.js"></script> </div>
+
+    </div> <div class="line" style="align-items:flex-start;"><br></div>
+
+    <div class="line" style="align-items:flex-start;"> <div class="bloc B0 M9
+    S9" > <h2>Voici une visualisation des 400 sites français les plus visités
+    possédant des registres Ads.txt.</h2> <br>Chaque case représente un site et
+    la couleur est relative au nombre de services publicitaires déclarés utilisés. <span> Passez votre
+    souris sur les cases pour plus d'information </span> <br> <br> La raison
+    pour laquelle il y a autant de services différents est simple : plus il y a d’échanges
+    sur lesquels est vendu l’inventaire, plus l’espérance du prix de vente
+    augmente, les éditeurs pouvant alors faire jouer la concurrence. <br><br>
+    Cependant cela signifie <span>qu'un nombre extrêmement important de tiers a
+    accès à la navigation web des Français</span>, souvent sans qu'ils
+    s'en rendent compte. </div> <div class="bloc B3 M3 S9"> <div
+    id="global_contrib_graph" style="max-width: 500px;margin: auto;"> </div>
+    <script src="static/grid.js"></script> </div> <div class="bloc B3 M0 S0" >
+    <h2>Voici une visualisation des 400 sites français les plus visités
+    possédant des registres Ads.txt.</h2> <br>Chaque case représente un site et
+    la couleur est relative au nombre de services publicitaires déclarés utilisés. <span> Passez votre
+    souris sur les cases pour plus d'information </span> <br> <br> La raison
+    pour laquelle il y a autant de services différents est simple : plus il y a d’échanges
+    sur lesquels est vendu l’inventaire, plus l’espérance du prix de vente
+    augmente, les éditeurs pouvant alors faire jouer la concurrence. <br><br>
+    Cependant cela signifie <span>qu'un nombre extrêmement important de tiers a
+    accès à la navigation web des Français</span>, souvent sans qu'ils
+    s'en rendent compte. </div>
+
+    </div> <div class="line" style="align-items:flex-start;"><br></div>
+
+    <div class="line" style="align-items:flex-start;">
+
+        <div class="bloc B3 M9 S9" > <h2>Les réseaux publicitaires les plus
+        populaires sont présents sur une part extrêmement importante de sites
+        web. </h2> Voici une visualisation de la proportion des sites sur lesquels
+        sont présents chacun des grands systèmes publicitaires. <br><br>
+        <span>Passez votre souris sur les cases pour connaitre la proportion de
+        présence de chaque réseau</span> <br><br> Chaque bloc est constitué des
+        400 sites identifiés précédemment, et si une case est colorée, le
+        système publicitaire y est présent. <div
+        id="gridperadnetwork_comment"></div> </div> <div class="bloc B3 M3 S9">
+        <div id="gridperadnetwork" style="max-width: 500px;margin: auto;"></div>
+        <script src="static/gridperadnetwork.js"></script>
+
+        </div> </div> <div class="line" style="align-items:flex-start;"> <div
+        class="bloc B3 M3 S9"> Au-delà de la connaissance par les systèmes
+        publicitaires de la navigation des Français, la publicité programmatique
+        pour laquelle est utilisée Ads.txt est <a target= "blank"
+        href="https://www.emarketer.com/content/programmatic-ad-spending-in-france-2019">pour
+        plus de sa moitié</a> constituée par du Real-Time Bidding ou RTB
+        <br><br> Dans le RTB, il peut y avoir sur chaque plateforme plusieurs
+        centaines d'acheteurs qui peuvent accéder aux données des internautes.
+        Ces flux de données incluent au minimum des identifiants de cookies et
+        en général l'URL (ou au moins le domaine) de la page sur laquelle la publicité sera affichée.
+        Il est parfois possible d’associer ces informations au contenu des
+        pages. De plus, les identifiants de cookies peuvent être synchronisés
+        entre les différents écosystèmes publicitaires pour mieux capter
+        l'intégralité de la navigation des utilisateurs.</div>
+        </div> <div class="line" style="align-items:flex-start;"><br></div>
+
+    <div class="line" style="align-items:flex-start;"> <div class="bloc B2 M9
+    S9" > <h2>Le nœud gordien de la publicité en ligne</h2>
+
+            <span>Pour finir, visualisons les connexions entre les trente
+            premiers réseaux publicitaires et les 100 premiers sites français
+            ayant un registre ads.txt.</span>
+
+            <br><br> Si ce graphique n'est pas particulièrement lisible, il
+            montre la complexité d'un écosystème dont l'ampleur reste grandement inconnue du
+            grand public. Combien des sociétés de la colonne gauche
+            connaissez-vous ? <br><br> <span>Cliquez sur les noms de société ou
+            bien de site web pour mieux visualiser les relations qui les
+            unissent.</span>
+
+            <br><br> Et si l'on devait représenter l'ensemble des acteurs ayant
+            accès à chacun de ces échanges publicitaires ? <br><br> Il convient
+            aujourd’hui de se demander si le système tel qu’il est mis en œuvre
+            n’est pas structurellement incompréhensible pour les utilisateurs, sa précision et sa
+            complexité ne pouvant pas raisonnablement être appréhendée par un
+            internaute lambda. Or ce système reposant sur le traitement de données
+            relatives aux individus (les identifiants de cookies généralement),
+            il est essentiel qu’il puisse être compris et maîtrisé par les
+            utilisateurs et qu’il intègre une approche <i>« privacy by design »</i>.
+            <br><br>
+            <a target= "blank"
+            href="./sellers_study.html">
+            Pour continuer à découvrir l'écosystème publicitaire en ligne, consultez notre étude sur les fichiers Sellers.json</a>
+            </div> <div class="bloc B3 M3 S9"> <div
+            id="my_dataviz"></div> <script src="static/sankey.js"></script>
+            <script src="static/sankey_script.js"></script> </div>
+
+    </div>
+
+    <div class="line" style="align-items:flex-start;"> <div class="bloc B2 M9
+    S9" > <h5>Article sur la base d'un scan effectué le 26 Août
+    2020. </h5><h5><a target= "blank"
+    href="https://github.com/LINCnil">Retrouver une partie des données sources
+    et le code de cette page sur le Github de la CNIL</a></h5><br><div>Cette étude repose sur la collecte d'URL et de données
+    exclusivement relatives à des personnes morales. Cependant, dans certains
+    cas, ces informations sont susceptibles de  comprendre des données à
+    caractère personnel. Ce traitement est mis en œuvre par la <a
+    href="http://www.cnil.fr/">CNIL</a>. Il est
+    fondé sur l’exercice de l’autorité publique et a
+    pour finalité la production d’études sur les usages des technologies. Les
+    données collectées sont relatives aux noms de domaines des sites web
+    publiquement accessibles via Internet. Ces données seront conservées pendant
+    une durée maximale de 5 ans. Pour en savoir plus sur les modalités de
+    gestion de vos données ou exercer vos droits, vous pouvez <a target= "blank"
+    href="https://www.cnil.fr/fr/donnees-personnelles">pouvez consulter cette page</a>. </div>
+</div>
+</div>
+</body>
+</html>

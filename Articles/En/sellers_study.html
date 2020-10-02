@@ -1,0 +1,220 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"> <html
+xmlns="http://www.w3.org/1999/xhtml"> <head> <meta http-equiv="Content-Type"
+content="text/html; charset=utf-8" /> <meta name="viewport"
+content="width=device-width, initial-scale=1.0"> <meta
+http-equiv="Content-Style-Type" content="text/css" /> <link rel="stylesheet"
+type="text/css" href="static/base2.css"> <script
+src="static/d3.v4.min.js"></script> <title>Discover the advertising web
+with Sellers.json files </title> <meta charset="utf-8"><!-- html5 version of
+http-equiv="Content-Type"... --> <meta name="description" content="The
+Sellers.json file, in the same way as the Ads.txt file, is a tool in the fight
+against advertising fraud on the Web, which contains information allowing to
+visualise the relationships between the different players in the field."> <meta
+name="keywords" content="Sellers.json, LINC, CNIL, advertising,
+cookies"> <link rel="author" href="https://linc.cnil.fr/" /> <head>
+
+<body>
+    <div class="header">
+        <div class="header_container">
+            <a class="header_link" href="http://linc.cnil.fr/fr/discover-advertising-web-files-adstxt-and-sellersjson">
+                <img class="header_back_button" typeof="foaf:Image" src="static/back.svg" alt="Go Back">
+            </a>
+            <a class="header_link"  href="https://linc.cnil.fr">
+                <img typeof="foaf:Image" style="object-fit:contain;" src="https://linc.cnil.fr/sites/default/files/styles/default/public/thumbnails/image/linc_lab_blanc-site-web-2.png?itok=fgENwmXw" >
+            </a>
+        </div>
+    </div>
+<div class="line">
+    <div class="bloc B2 M4 S9"> <h1>Discover the advertising web with
+    Sellers.json files </span><h1>
+</div> <div class="bloc B1 M1S1"> </div> </div>
+
+    <div class="line"> <div class="bloc B3 M3 S9"> <h2><span>The Sellers.json
+    files</span>, in the same way as the <span>Ads.txt files</span>, are a tool
+    in the fight against advertising fraud on the Web, which contains
+    information allowing to visualise the relationships between the different
+    players in the field.</h2> </div> </div>
+
+    <div class="line"> <div class="bloc B3 M3 S9">This content, published by the
+    CNIL's Digital Innovation Lab, is based on factual analysis using freely
+    available information. These results does not constitute an analysis of the
+    compliance of the practices observed and in no way prejudges the
+    qualification that could be made by the CNIL of these practices. This study
+    was carried out as part of the CNIL's general mission of monitoring
+    information technologies (Art 8-4 of the French Data Protection Act).
+    <br><br></div>
+
+    <div class="line">
+    <div class="bloc B2 M9 S9"> <h2> What are the Sellers.json files?</h2>
+    </div> <div class="bloc B3 M3 S9">  As explained in our <a target= "blank"
+    href="./ads_study.html">Ads.txt study</a>, publishers use services called SSP
+    (for <i>"supply-side platform"</i>) to market inventory items (i.e. advertising
+    impressions) on an ad exchange network. Each of these SSPs is therefore
+    authorised by the publisher to sell inventory from its website on a certain
+    number of ad exchanges, whether this SSP is directly integrated on the
+    publisher's page or is external and therefore a simple reseller. Sometimes,
+    an inventory item can pass through several SSPs in the chain to be sold,
+    which is not described in the Ads.txt files. <br><br> <span>The Sellers.json
+    file describes the commercial relations between the different SSPs and the
+    publishers, making it possible to identify all the intermediaries during the
+    sale of inventory. <span>
+    </div> </div>
+
+    <div class="line"> <div class="bloc B2 M9 S9"> <h2>What are the additional
+    elements compared to Ads.txt?</h2>
+
+        </div> <div class="bloc B3 M3 S9">
+
+            The types of frauds targeted by the Sellers.json file are quite
+            similar to those targeted by Ads.txt (i.e. site usurpation and
+            inventory resale), but this mechanism provides other tools to detect
+            them. <br><br>Thus, it makes it possible: <ul> <li>For publishers to
+            check that the sales channel of their inventory meets their
+            expectations.</li> <li>For buyers to identify the third parties
+            involved in the inventory sale, thus avoiding dubious actors.</li>
+            <li>For third parties to detect, through inconsistencies between the
+            Ads.txt and Sellers.json registers, potential fraud.</li> </ul>
+
+        </div> </div> <div class="line"> <div class="bloc B2 M9 S9"> <h2>
+        Why do we care?</h2>
+
+        </div> <div class="bloc B3 M3 S9">
+
+            While Ads.txt files identify the relationships between online
+            advertising companies and website publishers, Sellers.json files
+            allow you to visualise the intermediary players involved in the sale
+            of inventory. Each inventory item sold is associated with a unique
+            identifier of the user, which is generally stored in a cookie. This
+            identifier makes it possible to build advertising profiles of users,
+            for example by tracing their browsing through the web. To better
+            understand these practices, <a target= "blank"
+            href="https://linc.cnil.fr/les-encheres-en-temps-reel-rtb-un-systeme-complexe">
+            read the article on the RTB (in French)</a>, one of the most popular
+             programmatic sales modalities.
+
+            <br><br> <span>By visualising the relationships between the
+            different advertising networks that take place when an item of
+            inventory is put up for sale, we lift the veil on an industry
+            characterised by a high level of intermediation. </span> </div>
+            </div>
+
+    <div class="line"> <div class="bloc B2 M9 S9"> <h2> Methodology</h2>
+
+        </div> <div class="bloc B3 M3 S9"> <script
+        src="static/randomseller.js"></script> We use the top 20 French web
+        advertising companies publishing a Sellers.json file  (<a
+        onclick="openSellerjson();" >see a random one</a>) based on <a target=
+        "blank" href="./ads_study.html">our Ads.txt study</a>. For each of these
+        players, if they list other SSP intermediaries, we add them to our list
+        and carry on. Only files with a URL are considered valid.
+        <br><br> This method enabled us to identify  <span>6017</span> SSP,
+        present on <span>217 985</span> websites. <br><br> We crawled this
+        sample on to the 14th September 2020.
+        <br><br> <span>Disclaimer: these data are based on the values declared
+        by the different actors studied. The results of this study are therefore
+        dependent on the accuracy of these declared data. </span>
+        </div> </div>
+
+    <div class="line"> <div class="bloc B2 M3 S9">
+
+            <h1>The results</h1> </div> </div> <div class="line"
+            style="align-items:flex-start;"><br></div>
+
+    <div class="line" style="align-items:flex-start;"> <div class="bloc B2 M9
+    S9" > <h2>SSPs generally have only a limited number of direct agreements
+    with publishers.</h2>Here is the visualisation of the number of entities by
+    typology that have links with the top 20 SSPs (these were identified during
+    the study on Ads.txt). Using Sellers.json, we can see that these SSPs can
+    declare relationships with 3 types of players: <ul> <li> publishers;</li>
+    <li>intermediaries;</li> <li>mixed players, fulfilling both roles.</li>
+    </ul> <span> Click to group the values by SSP:  <label><input
+    id="stacked-chart-checkbox" type="checkbox" value ="off" autocomplete="off">
+    </label> .</span>  <br><br>As can be seen in the visualisation, even the
+    largest SSPs rarely have direct relationships with more than 1000
+    publishers. On average a SSP has relationships with
+    <span> 671</span> publishers and <span> 72</span> intermediaries. There
+    are of course exceptions to this rule. For example, a single SSP offers
+    inventory from more than 130,000 publishers.</div> <div
+    class="bloc B2 M3 S9"> <div id="stacked-chart"> </div> <script
+    src="static/stacked-chart.js"></script> </div>
+
+    </div> <div class="line" style="align-items:flex-start;"><br></div>
+
+    <div class="line" style="align-items:flex-start;"> <div class="bloc B0 M9
+    S9" > <h2>Here is a visualization of the relationships between 20 of the
+    most present SSPs on the French web.</h2> <br><span>Move your mouse over the
+    links to see the data flows to each SSP. </span> <br> <br>We can see that
+    SSPs are characterised by a very high interconnection rate, making it
+    possible to offer each element of publishers' inventory over a maximum
+    number of advertising exchanges. There are 51 interconnection between the 20
+    most present SSPs.<br><br> This means that <span>an extremely large number
+    of SSPs can have access to the French Internet users’s data</span> via these
+    interconnections. </div> <div class="bloc B3 M3 S9"> <div id="chorded-chart"
+    style="max-width: 500px;margin: auto;"> </div> <script
+    src="static/chorded-chart.js"></script> </div> <div class="bloc B3 M0 S0" >
+    <h2>Here is a visualization of the relationships between 20 of the
+    most present SSPs on the French web.</h2> <br><span>Move your mouse over the
+    links to see the data flows to each SSP. </span> <br> <br>We can see that
+    SSPs are characterised by a very high interconnection rate, making it
+    possible to offer each element of publishers' inventory over a maximum
+    number of advertising exchanges. There are 51 interconnection between the 20
+    most present SSPs.<br><br> This means that <span>an extremely large number
+    of SSPs can have access to the French Internet users’s data</span> via these
+    interconnections. </div>
+
+    </div> <div class="line" style="align-items:flex-start;"><br></div>
+
+    <div class="line" style="align-items:flex-start;">
+
+        <div class="bloc B3 M9 S9" > <h2>By using these relationships, the most
+        important SSPs are all able to reach almost all publishers.</h2>The main
+        difference between them is the number of intermediaries they need to
+        reach each publisher. The graph opposite counts the number of domains
+        reached according to the number of intermediaries, with a maximum of 3
+        intermediaries.<br><br>
+        <span>Click to group the values: <label><input
+        id="estate-chart-checkbox" type="checkbox" value ="off"
+        autocomplete="off"></label> .</span> <br><br>It can be observed that the
+        majority of SSPs can reach and therefore sell inventory from more than
+        <span>240 000 publishers</span>. The main difference is that an SSP with
+        fewer intermediaries will be able to offer the publisher's inventory at
+        a lower cost.  </div> <div class="bloc B3 M3 S9"> <div
+        id="estate-chart"> </div> <script src="static/estate-chart.js"></div>
+        <script src="static/gridperadnetwork.js"></script></div> </div>
+
+        <div class="line" style="align-items:flex-start;"> <div class="bloc B2
+        M9 S9" > <h2>A dense and opaque sales network</h2>The SSP landscape is
+        characterised by a high level of intermediation, interconnection and
+        redundancy of players. The network for the sale of inventory is
+        generally unknown to users, and sometimes even to publishers. As a
+        result, even publishers who choose to authorise only a limited number of
+        advertising agencies in their domains potentially expose their users'
+        data to numerous third parties, as this data usually accompanies the
+        sale of advertising space in the context of targeted
+        advertising.<br><br>Below you can view these potential resale path for
+        sites identified in this study as part of the French Alexa Top 50.
+        </div> <div class="bloc B9 M3 S9"> <span>Select the name of the site
+        whose partners you want to explore: </span> <br>You can then click on
+        the actors to view the links that connect them.<br><select
+        id="website_choice"><option selected="selected">Choose</option></select>
+        <input type="button" id="sub" value="Voir"/> <br><br> <div
+        id="my_dataviz"></div> <script src="static/d3-sankey.js"></script>
+        <script src="static/sankey_script2.js"></script> </div> </div>
+
+    <div class="line" style="align-items:flex-start;"> <div class="bloc B2 M9
+    S9" > <h5>Article based on a scan made on 14 September 2020.  </h5> <h5><a target= "blank"
+    href="https://github.com/LINCnil">Find all the source data and the code of this page on the CNIL's Github.</a></h5>
+    <br><div>This study is based on the collection of URL and data that is
+    exclusively related to legal persons. However, in some instance this data
+    might contain personal data. This processing is carried out by the <a
+    href="http://www.cnil.fr/">CNIL</a>. It is based on the exercise of an
+    official authority and its purpose is to produce studies on the use of
+    technology. The data collected is related to website domain names that are
+    freely accessible over the Internet. This data will be stored for a maximum
+    duration of 5 years.  For more information on the way the data is processed
+    or to exercise your rights, you can  <a target= "blank"
+    href="https://www.cnil.fr/fr/donnees-personnelles">consult this page</a>.
+    </div>
+
+</div> </div> </body> </html>

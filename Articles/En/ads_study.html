@@ -1,0 +1,256 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Style-Type" content="text/css" />
+    <link rel="stylesheet" type="text/css" href="static/base1.css">
+    <script src="static/d3.v4.min.js"></script>
+    <title>Discover the advertising web with Ads.txt files</title>
+    <meta charset="utf-8">
+    <meta name="description" content="The Ads.txt files, a tool used in the fight against advertising fraud on the Web, contains keys to visualise the relationships between the various players in the field.">
+    <meta name="keywords" content="Ads.txt, LINC, CNIL, advertisement, cookies">
+    <link rel="author" href="https://linc.cnil.fr/" />
+<head>
+
+<body>
+    <div class="header">
+        <div class="header_container">
+            <a class="header_link" href="http://linc.cnil.fr/fr/discover-advertising-web-files-adstxt-and-sellersjson">
+                <img class="header_back_button" typeof="foaf:Image" src="static/back.svg" alt="Go Back">
+            </a>
+            <a class="header_link"  href="https://linc.cnil.fr">
+                <img typeof="foaf:Image" style="object-fit:contain;" src="https://linc.cnil.fr/sites/default/files/styles/default/public/thumbnails/image/linc_lab_blanc-site-web-2.png?itok=fgENwmXw" >
+            </a>
+        </div>
+    </div>
+
+    <div class="line"> <div class="bloc B2 M4 S9"> <h1>Discover the advertising web with <span> Ads.txt</span> files<h1> </div>
+    <div class="bloc B1 M1 S1"> </div> </div>
+
+    <div class="line"> <div class="bloc B3 M3 S9"> <h2><span>The Ads.txt files,</span>
+    a tool used in the fight against advertising fraud on the Web, contains keys to
+    visualise the relationships between the various players in the field.</h2>
+    </div> </div>
+
+    <div class="line"> <div class="bloc B3 M3 S9">This content, published by the
+    CNIL's Digital Innovation Lab, is based on factual analysis using freely
+    available information. These results does not constitute an analysis of the
+    compliance of the practices observed and in no way prejudges the
+    qualification that could be made by the CNIL of these practices. This study
+    was carried out as part of the CNIL's general mission of monitoring
+    information technologies (Art 8-4 of the French Data Protection Act).
+    <br><br></div>
+
+
+    <div class="line">
+    <div class="bloc B2 M9 S9"> <h2> What are Ads.txt files?</h2> </div>
+    <div class="bloc B3 M3 S9">It all starts with the "inventory". Most of the
+    websites you visit reserve one or more areas on their pages for displaying
+    advertisement. For each web user who visits these pages, there is therefore
+    a possible "impression" (i.e. display) of an advertisement in this space for
+    that user. This “impression” constitutes an element of inventory sold by the
+    publisher. <br><br> For example, for a website with 1 advertising space and
+    1000 daily visitors, the site inventory is made up of 1000 impressions for
+    sale per day.
+    <br><br> The publisher will generally use the services of one or more SSPs (for
+    <i>« <a target= "blank"
+    href="https://linc.cnil.fr/les-encheres-en-temps-reel-rtb-un-systeme-complexe">
+    supply-side platform</a> »</i>)to sell these impressions on an advertising
+    exchange network (or <i>"ad exchange"</i>). Each of these SSPs is therefore
+    authorised by the publisher to sell its inventory on a certain number of ad
+    exchange networks, whether this SSP is directly integrated on the
+    publisher's page or just a simple reseller. <br><br>
+    <span>Those relationships are described in the Ads.txt files, with the aim
+    of fighting against advertising fraud. <span> </div> </div>
+
+    <div class="line"> <div class="bloc B2 M9 S9"> <h2>What types of fraud are publishers trying to avoid?</h2>
+
+        </div> <div class="bloc B3 M3 S9">
+
+            Why do publishers voluntarily make the list of advertising companies
+            they work with available to everyone? The aim is to avoid two types
+            of fraud:
+
+            <ul> <li>The first is quite simple: it is the usurpation of a publisher’s
+            identity. Let's imagine that the SSP1 is selling the inventory of website A on
+            an advertising exchange network. This website has a good reputation, and the
+            inventory is selling well. SSP2 then decides to sell the inventory on the same
+            network inventory of a website B, which is less valuable, by passing it off as
+            the one from website A. The SSP2 can then sell its lower quality inventory at a
+            higher price, which results in the authentic inventory being discounted (since
+            prices are adjusted according to supply and demand). Ads.txt files allows all
+            the actors in the ecosystem to check whether SSP2 is allowed to sell the
+            inventory of website A and therefore preserving its value.
+            </li> <li>The second is more subtle: it is the resale of inventory.
+            Let's imagine that inventory from website A is sold on two different
+            advertising exchange networks, the ADX1 and the ADX2. On the ADX1
+            this inventory is sold for €1 per impression. On the ADX2 where
+            there is less demand, it is sold for €0.50 per impression. An SSP
+            can notice this variation and buy inventory onADX2 at a low price
+            and resell it on ADX1 at a higher price. Although this practice is
+            less fraudulent, it can lower the average profitability of the
+            inventory, hence its prohibition. With the Ads.txt files it is
+            possible to know that the SSP should not be able to resell this
+            inventory. </li>
+
+        </div> </div> <div class="line"> <div class="bloc B2 M9 S9"> <h2>
+        Why do we care?</h2>
+
+        </div> <div class="bloc B3 M3 S9">
+
+            Ads.txt files allow to identify the relationships between online
+            advertising companies and website publishers. It is important to
+            know that the players in this chain do not limit themselves to
+            organising inventory sales. Each inventory item sold is associated
+            with a unique identifier of the web user which is generally stored
+            in a cookie. This identifier makes it possible to build advertising
+            profiles of users, for example by tracing their browsing habits
+            through the web. To better understand these practices, <a target=
+            "blank" href="https://linc.cnil.fr/les-encheres-en-temps-reel-rtb-un-systeme-complexe">
+            read the article (in French) on the RTB</a>, one of the most popular
+            programmatic sales modalities.<br><br> <span>By visualising the
+            prevalence of each player on the French Web, we can therefore get a
+            good idea of the extent of the collection of browsing data by
+            advertisers, as each advertising service generally uses cookies to
+            track Internet users. </span> </div> </div>
+
+    <div class="line"> <div class="bloc B2 M9 S9"> <h2> Methodology</h2>
+
+        </div> <div class="bloc B3 M3 S9">
+            We use the <a target= "blank"
+            href="https://www.alexa.com/topsites/countries/FR">
+            top 5000 French Alexa</a> to identify the most visited sites by
+            French web users.  <br><br> <script src="static/randomadstxt.js">
+            </script> On these 5000 websites, <span>31.8%</span> have an Ads.txt
+            file  (<a target="blank" href="#" onclick="openAdstxt();" >see a
+            random one</a>).<br><br>
+            We crawled this sample on the 26th August 2020.<br><br><span> Disclaimer:
+            this data is based on the values declared by the publishers, which
+            are not verified. The results of this study are therefore dependent
+            on the accuracy of these declared data. </span></div> </div>
+
+    <div class="line"> <div class="bloc B2 M3 S9">
+
+            <h1>The results</h1> </div> </div> <div class="line"
+            style="align-items:flex-start;"><br></div>
+
+    <div class="line" style="align-items:flex-start;"> <div class="bloc B2 M9 S9" >
+    <h2>The sites visited by French users use a large number of different
+    advertising systems</h2> Here is the list of the top 25 sites with an Ads.txt
+    file, ranked by popularity: <span>You can rank them by value: <label><input
+    type="checkbox"> </label></span> <br><br> An average site claims to use the
+    services of 38 different companies. <br><br> The maximum is <span>188</span> and
+    the minimum <span>1</span>. </div> <div class="bloc B2 M3 S9"> <div
+    id="sortable_graph"> </div> <script src="static/sortable_chart.js"></script>
+    </div>
+
+    </div> <div class="line" style="align-items:flex-start;"><br></div>
+
+    <div class="line" style="align-items:flex-start;"> <div class="bloc B0 M9
+    S9" > <h2>Here is a visualisation of the 400 most visited French websites
+    with an Ads.txt file.</h2> <br>Each box represents a site and its colour is
+    relative to the number of declared advertising services used.<span>Move your
+    mouse over the boxes for more information.  </span> <br> <br> The reason why
+    there are so many different services is simple: the more exchanges on which
+    inventory is sold, the more the expectation of the selling price increases,
+    as publishers can select the highest bidder. <br><br>
+    However, this means that <span>an extremely large number of third parties
+    have access to the users’ data,</span> often without them realising
+    it.</div> <div class="bloc B3 M3 S9"> <div
+    id="global_contrib_graph" style="max-width: 500px;margin: auto;"> </div>
+    <script src="static/grid.js"></script> </div> <div class="bloc B3 M0 S0" >
+    <h2>Here is a visualisation of the 400 most visited French websites
+    with an Ads.txt file.</h2> <br>Each box represents a site and its colour is
+    relative to the number of declared advertising services used.<span>Move your
+    mouse over the boxes for more information.  </span> <br> <br> The reason why
+    there are so many different services is simple: the more exchanges on which
+    inventory is sold, the more the expectation of the selling price increases,
+    as publishers can select the highest bidder. <br><br>
+    However, this means that <span>an extremely large number of third parties
+    have access to the users’ data,</span> often without them realising
+    it.</div>
+
+    </div> <div class="line" style="align-items:flex-start;"><br></div>
+
+    <div class="line" style="align-items:flex-start;">
+
+        <div class="bloc B3 M9 S9" > <h2>The most popular advertising networks
+        are present on an extremely large proportion of websites. </h2>Here is a
+        visualization of the proportion of sites on which each of the major
+        advertising systems are present. <br><br>
+        <span>Move your mouse over the boxes to see the proportion of presence
+        of each network. </span> <br><br>Each block is made up of the 400
+        previously identified sites, and if a box is coloured, the advertising
+        system is present. <div id="gridperadnetwork_comment"></div> </div>
+        <div class="bloc B3 M3 S9">
+        <div id="gridperadnetwork" style="max-width: 500px;margin: auto;"></div>
+        <script src="static/gridperadnetwork.js"></script>
+
+        </div> </div> <div class="line" style="align-items:flex-start;"> <div
+        class="bloc B3 M3 S9">In addition to advertising systems' knowledge of
+        browsing history of users, <a target= "blank"
+        href="https://www.emarketer.com/content/programmatic-ad-spending-in-france-2019">more
+        than half</a> of the programmatic advertising for which Ads.txt is used is
+        Real-Time Bidding or RTB.
+        <br><br> In RTB there can be several hundred buyers on each platform who
+        can access the data of the users. These data streams include at least
+        cookie identifiers and usually the URLs (or at least the domain) of the
+        webpage on which the ad would be displayed. It is sometimes possible to
+        associate this information with page content. In addition, cookie
+        identifiers can be synchronized across different ad ecosystems to better
+        capture the full navigation of users.</div>
+        </div> <div class="line" style="align-items:flex-start;"><br></div>
+
+    <div class="line" style="align-items:flex-start;"> <div class="bloc B2 M9
+    S9" > <h2>The Gordian knot of online advertising</h2>
+
+            <span>Finally, let's look at the connections between the first
+            thirty advertising networks and the first 100 websites with an
+            ads.txt file. </span>
+
+            <br><br>Although this graph is hard to read, it shows the complexity
+            of an ecosystem whose extent remains largely unknown to the general
+            public. How many of the companies in the left column have you heard
+            of? <br><br> <span>Click on the company or website names to better
+            visualise the relationships between them. </span>
+
+            <br><br> What if we were to represent all the players who have
+            access to each of these advertising exchanges?  <br><br>We have to
+            wonder whether the system as implemented is not structurally
+            incomprehensible to users, since its precision and complexity cannot
+            reasonably be understood by an ordinary user. As this system is
+            based on the processing of data relating to individuals (generally
+            cookie identifiers), it is essential that it can be understood and
+            controlled by users and that it incorporates a <i>"privacy by design"</i>
+            approach. <br><br>
+            <a target= "blank"
+            href="./sellers_study.html">
+            To learn more about the online advertising ecosystem, see our study on Sellers.json files </a>
+            </div> <div class="bloc B3 M3 S9"> <div
+            id="my_dataviz"></div> <script src="static/sankey.js"></script>
+            <script src="static/sankey_script.js"></script> </div>
+
+    </div>
+
+    <div class="line" style="align-items:flex-start;"> <div class="bloc B2 M9
+    S9" > <h5>Article based on a scan made on 26 August 2020. </h5> <h5><a
+    target= "blank" href="https://github.com/LINCnil">Find some of the source data
+    and the code of this page on the CNIL's Github.</a></h5>
+    <br><div>This study is based on the collection of URL and data that is
+    exclusively related to legal persons. However, in some instance this data
+    might contain personal data. This processing is carried out by the <a
+    href="http://www.cnil.fr/">CNIL</a>. It is based on the exercise of an
+    official authority and its purpose is to produce studies on the use of
+    technology. The data collected is related to website domain names that are
+    freely accessible over the Internet. This data will be stored for a maximum
+    duration of 5 years.  For more information on the way the data is processed
+    or to exercise your rights, you can  <a target= "blank"
+    href="https://www.cnil.fr/fr/donnees-personnelles">consult this page</a>.
+    </div>
+
+</div>
+</div>
+</body>
+</html>

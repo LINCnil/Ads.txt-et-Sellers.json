@@ -1,0 +1,232 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"> <html
+xmlns="http://www.w3.org/1999/xhtml"> <head> <meta http-equiv="Content-Type"
+content="text/html; charset=utf-8" /> <meta name="viewport"
+content="width=device-width, initial-scale=1.0"> <meta
+http-equiv="Content-Style-Type" content="text/css" /> <link rel="stylesheet"
+type="text/css" href="static/base2.css"> <script
+src="static/d3.v4.min.js"></script> <title>Visualiser le web publicitaire avec
+les fichiers Sellers.json </title> <meta charset="utf-8"><!-- html5 version of
+http-equiv="Content-Type"... --> <meta name="description" content="Le fichier
+Sellers.json, un élément de lutte contre la fraude publicitaire sur le web,
+contient les clefs pour visualiser les relations entre les différents acteurs du
+milieu."> <meta name="keywords" content="Sellers.json, LINC, CNIL, publicité,
+traceurs"> <link rel="author" href="https://linc.cnil.fr/" /> <head>
+
+<body>
+    <div class="header">
+        <div class="header_container">
+            <a class="header_link" href="https://linc.cnil.fr/visualiser-le-web-publicitaire-avec-les-fichiers-adstxt-et-sellersjson">
+                <img class="header_back_button" typeof="foaf:Image" src="static/back.svg" alt="Go Back">
+            </a>
+            <a class="header_link"  href="https://linc.cnil.fr">
+                <img typeof="foaf:Image" style="object-fit:contain;" src="https://linc.cnil.fr/sites/default/files/styles/default/public/thumbnails/image/linc_lab_blanc-site-web-2.png?itok=fgENwmXw" >
+            </a>
+        </div>
+    </div>
+<div class="line">
+    <div class="bloc B2 M4 S9"> <h1> Visualiser le web publicitaire
+avec les fichiers <span> Sellers.json </span><h1>
+</div> <div class="bloc B1 M1S1"> </div> </div>
+
+    <div class="line"> <div class="bloc B3 M3 S9"> <h2><span>Le fichier
+    Sellers.json</span>, de la même manière que le fichier <span>Ads.txt</span>,
+    est un élément de lutte contre la fraude publicitaire sur le web qui contient
+    les clefs pour visualiser les relations entre les différents acteurs du
+    milieu.</h2> </div> </div>
+
+    <div class="line"> <div class="bloc B3 M3 S9">Ce contenu édité par le
+    Laboratoire d’innovation Numérique de la CNIL repose sur une analyse factuelle
+    basée sur des informations librement accessibles. Le résultat de cette analyse
+    ne constitue pas une analyse de la conformité des pratiques observées et ne
+    préjuge aucunement de la qualification qui pourrait être faite par la CNIL de
+    ces pratiques. La présente étude a été réalisée dans le cadre de la mission
+    générale de la CNIL de veille sur les technologies de l’information (Art 8-4 de
+    la Loi Informatique et Libertés). <br><br></div> 
+
+    <div class="line">
+    <div class="bloc B2 M9 S9"> <h2> Que sont les fichiers Sellers.json&nbsp;?</h2>
+    </div> <div class="bloc B3 M3 S9">  Comme expliqué dans <a target= "blank"
+    href="./ads_study.html">notre étude de Ads.txt</a>, les éditeurs utilisent
+    des services que l’on nomme SSP (pour <i>« supply-side platform »</i>) pour
+    commercialiser des éléments d’inventaire (c'est à dire des impressions
+    publicitaires) sur un réseau d'échange publicitaire (ou « ad exchange »).
+    Chacun de ces SSP est donc autorisé par l’éditeur à vendre de l’inventaire
+    de son site sur un certain nombre d’échanges publicitaires, que ce SSP soit
+    directement intégré sur la page de l’éditeur ou bien externe et donc simple
+    revendeur. Parfois, un élément d'inventaire peut passer par plusieurs SSP à
+    la chaine pour être commercialisé, ce qui n'est pas décrit dans les fichiers
+    Ads.txt.  <br><br> <span>Le fichier Sellers.json décrit les relations
+    commerciales entre les différents SSP et les éditeurs, permettant
+    d'identifier tous les intermédiaires lors de la vente d'inventaire.<span>
+    </div> </div>
+
+    <div class="line"> <div class="bloc B2 M9 S9"> <h2> Quels éléments
+    supplémentaires par rapport à Ads.txt</h2>
+
+        </div> <div class="bloc B3 M3 S9">
+
+            Les typologies de fraudes qui sont visées par le fichier Sellers.json
+            sont assez similaires à celles visées par Ads.txt (c’est-à-dire
+            l’usurpation de site et la revente d’inventaire), mais ce mécanisme
+            apporte d'autres outils pour les détecter.  <br><br> Ainsi, ils
+            permettent : <ul> <li>Aux éditeurs de vérifier que le circuit de
+            vente de leur inventaire correspond à leurs attentes.</li> <li>Aux
+            acheteurs d'identifier les tiers participants à la mise en vente
+            d'inventaire, évitant ainsi les acteurs douteux.</li> <li>Aux tiers
+            de détecter, par des incohérences entre les registres Ads.txt et
+            Sellers.json, des fraudes potentielles.</li> </ul>
+
+        </div> </div> <div class="line"> <div class="bloc B2 M9 S9"> <h2>
+        Pourquoi ça nous intéresse ?</h2>
+
+        </div> <div class="bloc B3 M3 S9">
+
+            Si les fichiers Ads.txt permettent d’identifier les relations entre
+            les sociétés de la publicité en ligne et les éditeurs de sites web,
+            les fichiers Sellers.json permettent de visualiser les acteurs
+            intermédiaires intervenant lors de la vente d'inventaire.
+
+            A chaque élément d’inventaire vendu est associé à un identifiant
+            unique de l’internaute qui est généralement stocké dans un cookie.
+            Cet identifiant permet de construire des profils publicitaires des
+            internautes, par exemple en traçant la navigation de ceux-ci à
+            travers le web. Pour mieux comprendre ces pratiques, <a
+            target= "blank"
+            href="https://linc.cnil.fr/les-encheres-en-temps-reel-rtb-un-systeme-complexe">lire
+            l'article sur le RTB</a>, une des modalités de vente programmatique
+            les plus populaires.
+
+            <br><br> <span>En visualisant les relations entre les différents
+            réseaux publicitaires qui prennent place lors de la mise en vente
+            d'un élément d'inventaire, on lève le voile sur une industrie
+            caractérisée par un haut niveau d'intermédiation.</span> </div>
+            </div>
+
+    <div class="line"> <div class="bloc B2 M9 S9"> <h2> Méthodologie</h2>
+
+        </div> <div class="bloc B3 M3 S9"> <script
+        src="static/randomseller.js"></script> Nous utilisons le top 20 des
+        acteurs publicitaires sur le web français utilisant un registre
+        Sellers.json (<a onclick="openSellerjson();" >en voir un au hasard</a>)
+        en se basant sur <a target= "blank" href="./ads_study.html">notre étude
+        de Ads.txt</a>. Pour chacun de ces acteurs, s'ils listent d'autres
+        intermédiaires SSP, nous ajoutons ceux-ci à notre liste et ainsi de
+        suite. Seuls les registres ayant une URL sont considérés comme valides.
+        <br><br> Cette méthode nous a permis d'identifier <span>6017</span> SSP,
+        présents sur <span>217 985</span> sites. <br><br> Nous nous baserons sur
+        cet échantillon, le relevé des valeurs étant effectué le 14 Septembre 2020.
+        <br><br> <span>Attention : ces données sont basées sur les valeurs
+        déclarées par les différents acteurs étudiés. Les résultats de cette
+        étude sont donc dépendants de l'exactitude de ces données déclarées.</span>
+        </div> </div>
+
+    <div class="line"> <div class="bloc B2 M3 S9">
+
+            <h1>Les résultats</h1> </div> </div> <div class="line"
+            style="align-items:flex-start;"><br></div>
+
+    <div class="line" style="align-items:flex-start;"> <div class="bloc B2 M9
+    S9" > <h2>Les SSP n'ont en général qu'un nombre limité d'accords directs avec
+    les éditeurs.</h2> Voici la visualisation du nombre d’entités par typologie qui ont des
+    liens avec le top 20 des SSP (ceux-ci ont été identifiés lors de l'étude sur
+    Ads.txt). En utilisant Sellers.json, on voit que ces SSP peuvent en effet déclarer des
+    relations avec 3 types d'acteurs :  <ul> <li> des éditeurs ;</li> <li> des
+    intermédiaires ;</li> <li> des acteurs mixtes, remplissant les deux
+    rôles.</li> </ul> <span> Cliquez pour grouper les valeurs par SSP : <label><input
+    id="stacked-chart-checkbox" type="checkbox" value ="off" autocomplete="off">
+    </label> .</span>  <br><br>Comme on le voit dans la visualisation, même les
+    plus grand SSP ont rarement des relations directes avec plus de 1000
+    éditeurs.  Un SSP moyen parmi ceux ayant déclaré a des relations avec
+    <span> 671 </span> éditeurs et <span> 72 </span> intermédiaires. Il y a
+    bien sûr des exceptions à cette règle. Ainsi, un unique SSP propose de
+    l'inventaire provenant de plus de 130 000 éditeurs.</div> <div
+    class="bloc B2 M3 S9"> <div id="stacked-chart"> </div> <script
+    src="static/stacked-chart.js"></script> </div>
+
+    </div> <div class="line" style="align-items:flex-start;"><br></div>
+
+    <div class="line" style="align-items:flex-start;"> <div class="bloc B0 M9
+    S9" > <h2>Voici une visualisation des relations entre 20 des SSP les plus
+    présents sur le web français.</h2> <br><span> Passez votre souris sur les
+    liens pour voir les flux de données vers chaque SSP</span> <br> <br> Ceci
+    permet de visualiser que les SSP sont caractérisés par un très fort taux
+    d'interconnexion, permettant d'offrir chaque élément d'inventaire des
+    éditeurs sur un nombre maximum d'échanges publicitaires. Il y a 51 accords
+    d'interconnexion entre les 20 SSP les plus présents<br><br>
+    Cela signifie <span>qu'un nombre extrêmement important de SSP peut avoir
+    accès à la navigation internet des Français</span> par le jeu de ces
+    interconnexions. </div> <div class="bloc B3 M3 S9"> <div id="chorded-chart"
+    style="max-width: 500px;margin: auto;"> </div> <script
+    src="static/chorded-chart.js"></script> </div> <div class="bloc B3 M0 S0" >
+    <h2>Voici une visualisation des relations entre 20 des SSP les plus présents
+    sur le web français.</h2> <br><span> Passez votre souris sur les
+    liens pour voir les flux de données vers chaque SSP</span> <br> <br> Ceci
+    permet de visualiser que les SSP sont caractérisés par un très fort taux
+    d'interconnexion, permettant d'offrir chaque élément d'inventaire des
+    éditeurs sur un nombre maximum d'échanges publicitaires. Il y a 51 accords
+    d'interconnexion entre les 20 SSP les plus présents<br><br>
+    Cela signifie <span>qu'un nombre extrêmement important de SSP peut avoir
+    accès à la navigation internet des Français</span> par le jeu de ces
+    interconnexions.  </div>
+
+    </div> <div class="line" style="align-items:flex-start;"><br></div>
+
+    <div class="line" style="align-items:flex-start;">
+
+        <div class="bloc B3 M9 S9" > <h2>En utilisant ces relations, les SSP les
+        plus importants arrivent tous à atteindre la quasi-totalité des
+        éditeurs</h2> La principale différence entre eux est le nombre
+        d'intermédiaires dont ils ont besoin pour atteindre chaque éditeur. Le
+        graphe ci-contre comptabilise le nombre de domaines atteints en fonction
+        du nombre d'intermédiaires, avec au maximum 3 intermédiaires.<br><br>
+        <span> Cliquez pour grouper les valeurs : <label><input
+        id="estate-chart-checkbox" type="checkbox" value ="off"
+        autocomplete="off"></label> .</span> <br><br> On observe que la majorité
+        des SSP peut atteindre et donc vendre de l'inventaire de plus de
+        <span>240 000 éditeurs</span>. La principale différence est qu'un SSP
+        avec moins d'intermédiaires va pouvoir proposer l'inventaire de l'éditeur
+        à moindre coût. </div> <div class="bloc B3 M3 S9"> <div
+        id="estate-chart"> </div> <script src="static/estate-chart.js"></div>
+        <script src="static/gridperadnetwork.js"></script></div> </div>
+
+        <div class="line" style="align-items:flex-start;"> <div class="bloc B2
+        M9 S9" > <h2>Un réseau de mise en vente dense et opaque</h2> Au final,
+        le marché des SSP est caractérisé par un haut niveau d'intermédiation,
+        d'interconnexions et de redondance des acteurs.  Ce réseau de mise en
+        vente d'inventaire n'est en général pas connu des utilisateurs, et
+        parfois même des éditeurs.  En conséquence, même les éditeurs qui font
+        le choix de n'autoriser  qu'un nombre limité de régies publicitaires sur
+        leurs domaines exposent potentiellement les données de leurs
+        utilisateurs à des nombreux tiers, ces données accompagnant la plupart
+        du temps la mise en vente d'espaces publicitaires dans le cadre de la
+        publicité ciblée.<br><br> Vous pouvez ci-dessous visualiser ces réseaux
+        potentiels de mise en vente d'inventaire pour des sites identifiés
+        au cours de cette étude faisant partie du top 50 Alexa français. </div>
+        <div class="bloc B9 M3 S9"> <span>Sélectionnez le nom du site dont vous
+        voulez explorer les partenaires:</span> <br>Vous pouvez ensuite cliquer
+        sur les acteurs pour visualiser les liens qui les relient.<br><select
+        id="website_choice"><option
+        selected="selected">Choisissez</option></select>     <input
+        type="button" id="sub" value="Voir"/> <br><br> <div
+        id="my_dataviz"></div> <script src="static/d3-sankey.js"></script>
+        <script src="static/sankey_script2.js"></script> </div> </div>
+
+    <div class="line" style="align-items:flex-start;"> <div class="bloc B2 M9
+    S9" > <h5>Article sur la base d'un scan effectué le 14 Septembre
+    2020. </h5> <h5><a target= "blank"
+    href="https://github.com/LINCnil">Retrouver l'intégralité des données
+    sources et le code de cette page sur le Github de la CNIL</a></h5><br><div>Cette étude repose sur la collecte d'URL et de données
+    exclusivement relatives à des personnes morales. Cependant, dans certains
+    cas, ces informations sont susceptibles de  comprendre des données à
+    caractère personnel. Ce traitement est mis en œuvre par la <a
+    href="http://www.cnil.fr/">CNIL</a>. Il est
+    fondé sur l’exercice de l’autorité publique et a
+    pour finalité la production d’études sur les usages des technologies. Les
+    données collectées sont relatives aux noms de domaines des sites web
+    publiquement accessibles via Internet. Ces données seront conservées pendant
+    une durée maximale de 5 ans. Pour en savoir plus sur les modalités de
+    gestion de vos données ou exercer vos droits, vous pouvez <a target= "blank"
+    href="https://www.cnil.fr/fr/donnees-personnelles">pouvez consulter cette page</a>. </div>
+
+</div> </div> </body> </html>

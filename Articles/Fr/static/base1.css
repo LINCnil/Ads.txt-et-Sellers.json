@@ -1,0 +1,419 @@
+* {
+    margin: 0;
+    padding: 0;
+    align-items: baseline;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+body{
+    padding-top:14vh;
+    padding-left: 5vw;
+    padding-right: 5vw;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.header{
+    background-color:#333333;
+    width:100%;
+    height:100px;
+    position:fixed;
+    left: 0px;
+    top:0px
+}
+
+.header_container{
+    padding-top:10px;
+    padding-bottom:10px;
+    height:calc(100px - 20px);
+}
+
+.header_back_button{
+    color: transparent;
+    height: calc(100px - 40px);
+    width: 40px;
+    object-fit:contain;
+    position:fixed;
+    left: max(calc(5vw + 15px),calc(50vw - 585px));
+    top:20px;
+}
+
+.header_link:hover,
+.header_link:active{
+    background-color: transparent !important;
+    color: transparent !important;
+}
+
+.line {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-flow: row wrap;
+  flex-flow: row wrap;
+  padding-bottom: 20px
+}
+
+.imageInside {
+ align-self: stretch;
+ overflow: hidden;
+}
+.pimageInside {
+ overflow: hidden;
+ height: 100%;
+}
+.bloc {
+    flex: 1 ;
+    padding:15px;
+    width:100%;
+}
+
+
+
+.img_normal {
+    max-width: 100%;
+}
+img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+    width: 100%;
+
+}
+
+video {
+    width:100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+p{
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+@media all and (min-width: 1000px) {
+    .B0 {
+      display: none;
+    }
+    .B1 {
+      flex: 1 ;
+    }
+    .B2 {
+      flex: 2 ;
+    }
+    .B3 {
+      flex: 3 ;
+    }
+    .B4 {
+      flex: 4 ;
+    }
+    .B5 {
+      flex: 5 ;
+    }
+    .B6 {
+      flex: 6 ;
+    }
+    .B7 {
+      flex: 7 ;
+    }
+    .B8 {
+      flex: 8 ;
+    }
+    .B9 {
+      flex: 1 100%;
+    }
+
+}
+
+@media all and (min-width: 600px) and (max-width: 1000px) {
+    .M0 {
+      display: none;
+    }
+    .M1 {
+      flex: 1 ;
+    }
+    .M2 {
+      flex: 2 ;
+    }
+    .M3 {
+      flex: 3 ;
+    }
+    .M4 {
+      flex: 4 ;
+    }
+    .M5 {
+      flex: 5 ;
+    }
+    .M6 {
+      flex: 6 ;
+    }
+    .M7 {
+      flex: 7 ;
+    }
+    .M8 {
+      flex: 8 ;
+    }
+    .M9 {
+      flex: 1 100%;
+    }
+
+}
+
+@media all and (max-width: 600px) {
+    .S0 {
+      display: none;
+    }
+    .S1 {
+      flex: 1 ;
+    }
+    .S2 {
+      flex: 2 ;
+    }
+    .S3 {
+      flex: 3 ;
+    }
+    .S4 {
+      flex: 4 ;
+    }
+    .S5 {
+      flex: 5 ;
+    }
+    .S6 {
+      flex: 6 ;
+    }
+    .S7 {
+      flex: 7 ;
+    }
+    .S8 {
+      flex: 8 ;
+    }
+    .S9 {
+        flex: 1 100%;
+    }
+
+}
+
+
+
+/*///////////////USER CENTRIX ZONE/////////////*/
+
+
+/*LINKS*/
+a {
+  text-decoration: none;
+  color: rgb(244, 103, 92);
+  cursor: pointer;
+  -webkit-transition: background-color 0.2s ease-in-out;
+  -moz-transition: background-color 0.2s ease-in-out;
+  -o-transition: background-color 0.2s ease-in-out;
+  transition: background-color 0.2s ease-in-out;
+  font-weight: 400;
+}
+a:active,
+a:hover {
+  background-color: rgb(244, 103, 92);
+  color: #F9F9F9;
+  font-weight: 400;
+}
+
+.tooltip {
+    position: absolute;
+    z-index: 1070;
+    display: block;
+    margin: 0;
+    text-align: left;
+    text-align: start;
+    text-decoration: none;
+    text-shadow: none;
+    text-transform: none;
+    letter-spacing: normal;
+    word-break: normal;
+    word-spacing: normal;
+    white-space: normal;
+    line-break: auto;
+    font-size: 1em;
+    word-wrap: break-word;
+    opacity: 0.5;
+
+}
+
+.clickablerect{
+    cursor: pointer;
+}
+
+.clickabletext{
+    cursor: pointer;
+}
+.clickabletext:hover{
+    font-weight: bold;
+}
+
+.link {
+  fill: none;
+  stroke: #000;
+  stroke-opacity: 1;
+}
+
+.link:hover {
+  fill: none;
+  stroke: #000;
+   filter: brightness(90%);
+   stroke-width: 5px!important;
+
+}
+
+/*TYPOGRAPHY*/
+body{
+    font-family: "Source Sans Pro",Helvetica,sans-serif;
+  font-size: 120%;
+  line-height: 1.3;
+  color:#181717;
+}
+p, pre {
+  margin-left:10px;
+  margin-right:10px;
+
+  margin-top: 5px;
+  margin-bottom: 15px;
+  font-size: 14px;
+}
+
+pre{
+  padding: 16px;
+  overflow: auto;
+  line-height: 1.45;
+  background-color: #f6f8fa;
+  border-radius: 3px;
+}
+ hr {
+  border-bottom-color: #eee;
+  height: 0.1em;
+  padding: 0;
+  margin: 24px 0;
+  background-color: #e7e7e7;
+  border: 0;
+}
+strong {
+  font-weight: 600;
+}
+em {
+  font-style: italic;
+}
+
+span{
+    background-color: rgb(244, 103, 92);
+    color: white;
+}
+
+h3,h4,h5 {
+    font-weight: 500;
+    font-family: "Source Sans Pro",Helvetica,sans-serif;
+    font-size: 120%;
+    line-height: 1.3;
+    color: #181717;
+
+}
+
+h1 {
+    font-size: 4em;
+}
+
+bold{
+  font-weight: 800;
+  font-size: 120%
+}
+
+h1,
+h2
+{
+    text-rendering: optimizelegibility;
+  font-weight: 600;
+  line-height: 1.2;
+  font-family: "Gilroy",Helvetica,Arial,sans-serif;
+  margin-bottom:20px;
+}
+h6 {
+  color: #777;
+}
+
+/*LISTS*/
+li>p {
+  margin-top: 16px;
+}
+li+li {
+  margin-top: 0.25em;
+}
+ul,ol{
+
+  margin-top: 20px;
+  margin-bottom: 0;
+  padding-left: 1em;
+  margin-bottom: 10px;
+
+}
+
+/*QUOTE*/
+blockquote {
+  margin: 0;
+  margin-top: 0;
+  margin-bottom: 16px;
+  padding: 0 1em;
+  color: #777;
+  border-left: 0.25em solid #ddd;
+  background-color: #f6f8fa;
+
+}
+blockquote>:first-child {
+  margin-top: 0;
+}
+blockquote>:last-child {
+  margin-bottom: 0;
+}
+
+/*TABLE*/
+table {
+
+  border-spacing: 0;
+  border-collapse: collapse;
+  margin-top: 0;
+  margin-bottom: 16px;
+  width: 100%;
+  overflow: auto;
+  font-weight: 400;
+  font-size: 14px;
+}
+table th {
+  font-weight: bold;
+}
+table th,
+table td {
+  padding: 6px 13px;
+  border: 1px solid #ddd;
+}
+table tr {
+  background-color: #fff;
+  border-top: 1px solid #ccc;
+}
+table tr:nth-child(2n) {
+  background-color: #f8f8f8;
+}
+
+/*CODE*/
+code {
+  color: #1bb572;
+  white-space: pre-wrap;
+  font-family: monospace, monospace;
+  font-size: 1em;
+  padding: 0;
+  padding-top: 0.2em;
+  padding-bottom: 0.2em;
+  margin: 0;
+  background-color: #f6f8fa;
+  border-radius: 3px;
+}
